@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+   <head>
+      <meta charset="UTF-8">
+      <title>Concept</title>
+      <meta content="Concept" property="og:title">
+      <meta content="Concept" property="og:description">
+      <meta content="https://yourpage.com" property="og:url">
+      <meta content="#000000" data-react-helmet="true" name="theme-color">
+      <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+      <link href="css/preloader.css" rel="stylesheet">
+      <link href="css/preloader.css" rel="stylesheet">
+      <link href="css/highstl.css" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
+      <link href="css/Shacke.css" rel="stylesheet">
+      <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+      <script src="js/jquery.js"></script>
+      <script src="js/plugins.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/killlist.js"></script>
+      <style>
+         @font-face{font-family:Pompadur;src:url(fonts/font.html);src:local(pompadur),url(fonts/font.ttf);}h1{font-family:Pompadur,'Comic Sans MS',cursive;}
+         @font-face{font-family:Bazy;src:url(fonts/bazy.html);src:local(bazy),url(fonts/bazy.ttf);}
+      </style>
+      <div id="loader-wrapper">
+         <div id="loader"></div>
+         <div class="loader-section section-left"></div>
+         <div class="loader-section section-right"></div>
+      </div>
+   </head>
+   <body onmousedown="return false" onselectstart="return false">
+      <script>disableWheelScroll();</script>
+      <div id="star" class="video mask overlay">
+         <i class="volume-button fa fa-volume-up"></i>
+         <i class="stop-button fa fa-pause"></i>
+         <div class="video-fallback"></div>
+         <video autoplay id="video" onloadstart="this.volume=0.1" loop="" >
+            <source src="videos/core.mp4" type="video/mp4"/>
+         </video>
+         <script>setTimeout(function(){document.getElementById("video").play();}, 3000);</script>
+         <canvas class="cover"></canvas>
+      </div>
+      <div class="kill-feed">
+         <div><span class="player t"></span><span class="weapons"><img height="20"><img width="30" height="26" src="images/headshot.png"></span><span class="player ct"></span></div>
+      </div>
+      <div class="pageoverlay">
+         <div class="lightbox">
+            <div class="awrapper">
+               <div class="titles animated rubberBand" style="animation-delay: 6s;">
+                  <div class="animated zoomIn" style="animation-delay: 4s;">
+                     <div class="announcement" style="color: white;" >
+                     </div>
+                     <h1><font color="#FFFFFF">Sample</font></h1>
+                  </div>
+               </div>
+               <div class="media animated fadeInUpBig" style="animation-delay: 5s;">
+                  <a href="#">
+					<i class="fa fa-home hvr-grow" title="Button 1"></i>
+					<a href="#" target="_blank">
+					<i class="fa fa-youtube hvr-grow" title="Button 2"></i>
+					<a href="#" target="_blank">
+					<i class="fa fa-spotify hvr-grow" title="Button 3"></i>
+					<a href="#" target="_blank">
+					<i class="fa fa-twitter hvr-grow" title="Button 4"></i>
+					<a href="#" target="_blank">
+					<i class="fa fa-steam hvr-grow" title="Button 5"></i>
+					</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="pagebottom">
+         <footer>
+            <p><font color="#716161">This is a watermark! | Page by PhoenixAceVFX in HTML5, CSS, and JS</p>
+         </footer>
+         <center></center>
+      </div>
+      <script>$(document).ready(function() {setTimeout(function(){$('body').addClass('loaded');$('h2').css('color','#222222');}, 2500);});</script>
+   </body>
+   <style>
+      body{
+      position: fixed;
+      }
+      i:hover {
+      cursor: default;
+      }
+      h1:hover{
+      cursor: default;
+      }
+      p:hover{
+      cursor: default;
+      }
+      ::-webkit-scrollbar-track {
+      background: none; 
+      }
+      ::-webkit-scrollbar {
+      width: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+      background: none; 
+      }
+      ::-webkit-scrollbar-thumb {
+      background: none; 
+      }
+      a {
+      color: inherit;
+      text-decoration: inherit;
+      }
+   </style>
+</html>
